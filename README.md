@@ -27,7 +27,7 @@ ChekerJs is a purely JavaScript plugin that allows you to do real-time filtering
    </tr>
   </tbody>
 </table>
-
+  
 ```
 Sorting at the table level is performed using the name given to the class located in the ``` <tr> ``` tags. The class contains the sort criteria. It has the possibility of containing an infinite number of them. All separated by spaces. This way you will have the possibility to filter a row according to several criteria. The filter must be checkbox type inputs and must necessarily have the class "etiquette". The **value attribute must contain the sort criteria**, as in the following example :
 
