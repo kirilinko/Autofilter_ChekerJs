@@ -5,7 +5,7 @@ ChekerJs is a purely JavaScript plugin that allows you to do real-time filtering
  * Bootstrap 4.6 ([Available here](https://getbootstrap.com/docs/4.6/getting-started/introduction/) )
  * Bootstrap 3.4 ([Available here](https://getbootstrap.com/docs/3.4/getting-started/) )
  ## :books: How to use ?
- 
+   
  First of all, your HTML table must have the following structure: ``` <table> -> <thead> <tbody> ```
 ```html 
 <table>
