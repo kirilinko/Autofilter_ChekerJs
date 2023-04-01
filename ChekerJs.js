@@ -9,7 +9,7 @@
            // Si une checkbox est coché
         if(etiquette.checked){
               if(Tableau_check.indexOf(etiquette.value) == -1) {
-                    Tableau_check.push(etiquette.value);   // Insertion dans le tableau si  elle ne s'y trouve pas.
+                    Tableau_check.push(etiquette.value);   // Insertion dans le tableau si elle ne s'y trouve pas.
                        oncheck_traitement(Tableau_check,tag_tr); // Affiche les éléments cocher.
                   } 
               }
@@ -24,7 +24,7 @@
              }
 
 
-        function Add_class(element, laclass){ // Ajoute de la class
+        function Add_class(element, laclass){ // Ajouter de la class
             var i, tab_elem, tab_class;
             tab_elem=element.className.split(" ");
             tab_class=laclass.split(" ");
@@ -55,10 +55,10 @@
                       var status=0;
                       for(i=0; i<Tableau_check.length; i++){ //Nb d'etiquette checker
                          if (tag_tr[n].className.indexOf(Tableau_check[i]) > -1) {
-                         status=status+1; //Verifie si le fichier contien une des étiquette
+                         status=status+1; //Verifie si le fichier contient une des étiquettes
                          }        
                        }
-                         if(status>0){  //J'afficher unique les fichier qui contiennent une des étiquettes.
+                         if(status>0){  //J'afficher uniquement les fichiers qui contiennent une des étiquettes.
                          Remove_class(tag_tr[n], "d-none");
 
                       }
