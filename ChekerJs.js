@@ -21,7 +21,7 @@ function filtrage(etiquette) {
 }
 
 
-function Add_class(element, laclass) { // Ajouter de la class
+function Add_class(element, laclass) { // Ajoute de la class
     var i, tab_elem, tab_class;
     tab_elem = element.className.split(" ");
     tab_class = laclass.split(" ");
