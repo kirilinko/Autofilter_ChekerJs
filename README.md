@@ -40,30 +40,28 @@ Sorting at the table level is performed using the name given to the class locate
 For those using bootstrap 5, you can leave it untouched. On the other hand for any other version other than 5, you must modify the class "d-none" in the plugin. At the oncheck_traitement and ondecheck_traitement functions
 ```javascript
 
-oncheck_traitement=(Tableau_check, tag_tr)=>{
-                if(Tableau_check.length==1){
-                    for(i=0; i<tag_tr.length; i++){
-                    if(tag_tr[i].className.indexOf(Tableau_check[0]) == -1) {
-                     Add_class(tag_tr[i], "d-none");
-                       }
-                    }
-                }
-               else{ 
-                      for(n=0; n<tag_tr.length; n++){ //Nb de tr disponible 
-                      var status=0;
-                      for(i=0; i<Tableau_check.length; i++){ //Nb d'etiquette checker
-                         if (tag_tr[n].className.indexOf(Tableau_check[i]) > -1) {
-                         status=status+1; //Verifie si le fichier contient une des étiquettes
-                         }        
-                       }
-                         if(status>0){  //afficher uniquement les fichiers qui contiennent une des étiquettes.
-                         Remove_class(tag_tr[n], "d-none");
-
-                      }
-                 }
-             }
+oncheck_traitement = (Tableau_check, tag_tr) => {
+    if (Tableau_check.length == 1) {
+        for (i = 0; i < tag_tr.length; i++) {
+            if (tag_tr[i].className.indexOf(Tableau_check[0]) == -1) {
+                Add_class(tag_tr[i], "d-none");
+            }
         }
+    } else {
+        for (n = 0; n < tag_tr.length; n++) { //Nb de tr disponible 
+            var status = 0;
+            for (i = 0; i < Tableau_check.length; i++) { //Nb d'etiquette checker
+                if (tag_tr[n].className.indexOf(Tableau_check[i]) > -1) {
+                    status = status + 1; //Verifie si le fichier contient une des étiquettes
+                }
+            }
+            if (status > 0) { //afficher uniquement les fichiers qui contiennent une des étiquettes.
+                Remove_class(tag_tr[n], "d-none");
 
+            }
+        }
+    }
+}
 ```
 # Bootstrap class visibility table
 Version | Class
