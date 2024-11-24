@@ -71,4 +71,4 @@ Bootstrap 4.6 | show
 Bootstrap 3.4 | show
 
 # :computer: Demo and download
-See the demostration and download ChekerJs to https://chekerjs.herokuapp.com/
+See the demostration and download ChekerJs to github.com/kirilinko/RecorderJS
